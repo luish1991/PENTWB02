@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>Menu</title>
+        <script type="text/javascript" src="genetico.js"></script>
+        <link rel="stylesheet" href="genetico.css" />
+    </head>
+    <body>
+      <fieldset>
+        <legend>Algoritmo genetico</legend>
+        <form action="#">
+        <div id="inicial">
+            <label>Generacion 1</label><br />
+            <table id="poblacion">
+                <tr>
+                    <td>A1:</td>
+                    <td><input type="number" id="a11" min="0" max="1" style="text-align: center"/></td>
+                    <td><input type="number" id="a12" min="0" max="1" style="text-align: center"/></td>
+                    <td><input type="number" id="a13" min="0" max="1" style="text-align: center"/></td>
+                    <td><input type="number" id="a14" min="0" max="1" style="text-align: center"/></td>
+                    <td><input type="number" id="a15" min="0" max="1" style="text-align: center"/></td>
+                </tr>
+                <tr>
+                    <td>A2:</td>
+                    <td><input type="number" id="a21" min="0" max="1" style="text-align: center"/></td>
+                    <td><input type="number" id="a22" min="0" max="1" style="text-align: center"/></td>
+                    <td><input type="number" id="a23" min="0" max="1" style="text-align: center"/></td>
+                    <td><input type="number" id="a24" min="0" max="1" style="text-align: center"/></td>
+                    <td><input type="number" id="a25" min="0" max="1" style="text-align: center"/></td>
+                </tr>
+                <tr>
+                    <td>A3:</td>
+                    <td><input type="number" id="a31" min="0" max="1" style="text-align: center"/></td>
+                    <td><input type="number" id="a32" min="0" max="1" style="text-align: center"/></td>
+                    <td><input type="number" id="a33" min="0" max="1" style="text-align: center"/></td>
+                    <td><input type="number" id="a34" min="0" max="1" style="text-align: center"/></td>
+                    <td><input type="number" id="a35" min="0" max="1" style="text-align: center"/></td>
+                </tr>
+                <tr>
+                    <td>A4:</td>
+                    <td><input type="number" id="a41" min="0" max="1" style="text-align: center"/></td>
+                    <td><input type="number" id="a42" min="0" max="1" style="text-align: center"/></td>
+                    <td><input type="number" id="a43" min="0" max="1" style="text-align: center"/></td>
+                    <td><input type="number" id="a44" min="0" max="1" style="text-align: center"/></td>
+                    <td><input type="number" id="a45" min="0" max="1" style="text-align: center"/></td>
+                </tr>
+                <tr>
+                    <td>A5:</td>
+                    <td><input type="number" id="a51" min="0" max="1" style="text-align: center"/></td>
+                    <td><input type="number" id="a52" min="0" max="1" style="text-align: center"/></td>
+                    <td><input type="number" id="a53" min="0" max="1" style="text-align: center"/></td>
+                    <td><input type="number" id="a54" min="0" max="1" style="text-align: center"/></td>
+                    <td><input type="number" id="a55" min="0" max="1" style="text-align: center"/></td>
+                </tr>
+                <tr>
+                    <td>Modelo:</td>
+                    <td><input type="number" id="m1" value="1" readonly="true" min="0" max="1" disabled="true" style="text-align: center" /></td>
+                    <td><input type="number" id="m2" value="1" readonly="true" min="0" max="1" disabled="true" style="text-align: center"/></td>
+                    <td><input type="number" id="m3" value="1" readonly="true" min="0" max="1" disabled="true" style="text-align: center"/></td>
+                    <td><input type="number" id="m4" value="1" readonly="true" min="0" max="1" disabled="true" style="text-align: center"/></td>
+                    <td><input type="number" id="m5" value="1" readonly="true" min="0" max="1" disabled="true" style="text-align: center"/></td>
+                </tr>
+                 <tr>
+                    <td>Fitness:</td>
+                    <td><input type="number" id="f1" readonly="true" min="0" max="1" disabled="true" style="text-align: center"/></td>
+                    <td><input type="number" id="f2" readonly="true" min="0" max="1" disabled="true" style="text-align: center"/></td>
+                    <td><input type="number" id="f3" readonly="true" min="0" max="1" disabled="true" style="text-align: center"/></td>
+                    <td><input type="number" id="f4" readonly="true" min="0" max="1" disabled="true" style="text-align: center"/></td>
+                    <td><input type="number" id="f5" readonly="true" min="0" max="1" disabled="true" style="text-align: center"/></td>
+                </tr>
+                 <tr>
+                    <td>Suma:</td>
+                    <td><input type="number" id="sf" value="" readonly="true" style="width:51px" disabled="true" style="text-align: center"/></td>
+                </tr>
+            </table>
+            <br />
+            <div id="botones">
+                <button value="Registrar valores" type="button" id="btnRegistrar" onclick="registrar()">Registrar valores</button>
+                <button value="Calcular genetico" type="button" id="btnCalcular" onclick="procesar()" disabled>Calcular genetico</button>
+                <input type="reset" value="Limpiar" onclick="limpiar()" />
+            </div>
+           <br />
+        </div>
+       </form>
+        <div id="container">
+           
+       </div>
+      </fieldset>
+    </body>
+</html>
